@@ -8,6 +8,13 @@ Basic Requirements:
 2. Use a while loop to repeatedly ask the user for the password until the
 correct one is entered.
 3. Output an appropriate message when the correct password is entered.
+
+Optional Requirements:
+Modify the program to include a maximum of 5 password attempts. If the
+user enters the wrong password, inform them of the remaining attempts. If the
+maximum number of attempts is reached, inform the user that the authorities
+have been alerted.
+
 '''
 
 # assinging correct password
@@ -30,6 +37,6 @@ while incorrect_password < allowed_attempts:
         break
     else:
         remaining_attempts = allowed_attempts - incorrect_password
-        print("Sorry,Incorrect password.{incorrect_password}")
+        print("Sorry,Incorrect password.")
 else:
     print("Maximum attempts reached. please try again later.")
